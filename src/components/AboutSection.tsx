@@ -37,8 +37,9 @@ export default function AboutSection() {
               <p>
                 I'm a Machine Learning Engineer with{' '}
                 <span className="text-primary font-semibold">Five Years of Experience</span>, specializing in{' '}
-                <span className="text-secondary font-semibold">Traditional ML</span>,{' '}
-                <span className="text-secondary font-semibold">Generative AI (LLM & RAG)</span> and {' '}
+                <span className="text-secondary font-semibold">Traditional Machine Learning</span>,{' '}
+                <span className="text-secondary font-semibold">Deep Learning</span>,{' '}
+                <span className="text-secondary font-semibold">Generative AI</span> and {' '}
                 <span className="text-accent font-semibold">Agentic AI systems</span>.
               </p>
               <p>
@@ -50,9 +51,6 @@ export default function AboutSection() {
                 Hands-on experience with key machine learning libraries and frameworks, including
                 <span className="text-secondary font-semibold"> Keras, TensorFlow, NumPy, Pandas, Scikit-Learn, and more </span>{' '}
                 with FastAPI backends.
-              </p>
-              <p>
-                Deploying scalable AI infrastructure that transforms how developers work.
               </p>
             </div>
           </motion.div>
