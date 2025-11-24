@@ -11,6 +11,7 @@ export default function Navbar() {
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'research', label: 'Research' },
+    { id: 'resume', label: 'Download-CV' },
     // { id: 'mindrix', label: 'Mindrix' },
   ];
 
@@ -37,27 +38,44 @@ export default function Navbar() {
         </motion.button>
 
         <div className="flex gap-8">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className="relative text-foreground/80 hover:text-foreground transition-colors group"
-            >
-              {item.label}
-              <motion.span
-                className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"
-                initial={{ scaleX: 0 }}
-                whileHover={{ scaleX: 1 }}
-                transition={{ duration: 0.3 }}
-              />
-              {activeSection === item.id && (
+          {navItems.map((item) =>
+            item.id === 'resume' ? (
+              <a
+                key={item.id}
+                href="/Maaz_Resume.pdf"
+                download
+                className="relative text-foreground/80 hover:text-foreground transition-colors group"
+              >
+                {item.label}
                 <motion.span
-                  layoutId="activeSection"
                   className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"
+                  initial={{ scaleX: 0 }}
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
                 />
-              )}
-            </button>
-          ))}
+              </a>
+            ) : (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="relative text-foreground/80 hover:text-foreground transition-colors group"
+              >
+                {item.label}
+                <motion.span
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"
+                  initial={{ scaleX: 0 }}
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                {activeSection === item.id && (
+                  <motion.span
+                    layoutId="activeSection"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-primary"
+                  />
+                )}
+              </button>
+            )
+          )}
         </div>
       </div>
     </motion.nav>
