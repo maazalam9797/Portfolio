@@ -175,6 +175,26 @@ export default function ResearchSection() {
                    View Paper
                 </a>
 
+                 <Card className="mt-6 relative overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 backdrop-blur border-primary/30">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+              <div className="p-8 text-center relative z-10">
+                <h3 className="text-2xl font-bold mb-4 glow-text">
+                   Springer Nature
+                </h3>
+                <p className="text-muted-foreground mb-6 text-lg">
+                 Advancing EEG-based biometric identification through multi-modal data fusion and deep learning techniques.
+                
+                
+                </p>
+                <a
+                   href="https://link.springer.com/article/10.1007/s40747-025-02012-6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                  className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg hover:shadow-primary/50"
+                >
+                   View Paper
+                </a>
+
                
               </div>
             </Card>
