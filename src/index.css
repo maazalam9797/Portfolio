@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Deep space background with subtle blue tint */
+    --background: 222 47% 5%;
+    --foreground: 210 100% 98%;
+
+    /* Card with slight transparency and glow */
+    --card: 222 47% 8%;
+    --card-foreground: 210 100% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 100% 98%;
+
+    /* Electric cyan accent */
+    --primary: 189 97% 55%;
+    --primary-foreground: 222 47% 5%;
+
+    /* Deep purple secondary */
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 210 100% 98%;
+
+    /* Muted with subtle glow */
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20% 70%;
+
+    /* Bright accent color */
+    --accent: 280 100% 70%;
+    --accent-foreground: 222 47% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders with glow */
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 189 97% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom cinematic colors */
+    --neural-glow: 189 97% 55%;
+    --neural-node: 280 100% 70%;
+    --deep-space: 222 47% 3%;
+    --electric-blue: 210 100% 60%;
+    --cyber-purple: 262 83% 58%;
+    --neon-cyan: 189 97% 55%;
+    
+    /* Gradients */
+    --gradient-neural: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(189 97% 55%) 100%);
+    --gradient-glow: radial-gradient(circle, hsl(189 97% 55% / 0.3) 0%, transparent 70%);
+    --gradient-depth: linear-gradient(180deg, hsl(222 47% 5%) 0%, hsl(262 83% 10%) 100%);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(189 97% 55% / 0.4), 0 0 80px hsl(189 97% 55% / 0.2);
+    --shadow-neural: 0 10px 50px hsl(262 83% 58% / 0.3);
+    --shadow-card: 0 8px 32px hsl(222 47% 3% / 0.6);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 100% 98%;
+    --sidebar-primary: 189 97% 55%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 222 47% 15%;
+    --sidebar-accent-foreground: 210 100% 98%;
+    --sidebar-border: 222 47% 20%;
+    --sidebar-ring: 189 97% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    background: linear-gradient(180deg, hsl(222 47% 5%) 0%, hsl(222 47% 3%) 100%);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 20px hsl(189 97% 55% / 0.5), 0 0 40px hsl(189 97% 55% / 0.3);
+  }
+  
+  .glow-border {
+    border: 1px solid hsl(189 97% 55% / 0.3);
+    box-shadow: 0 0 20px hsl(189 97% 55% / 0.2);
+  }
+  
+  .neural-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .perspective-card {
+    transform-style: preserve-3d;
+    transition: var(--transition-smooth);
+  }
+  
+  .perspective-card:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.05);
+  }
+}
