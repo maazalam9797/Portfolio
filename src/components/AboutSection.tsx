@@ -4,13 +4,13 @@ import { Brain, Code2, Database, Boxes } from 'lucide-react';
 import profileImage from '@/assets/kartikeya-photo.jpg';
 import pytorchLogo from '@/assets/logo/pytorch-svgrepo-com.svg';
 import fastapiLogo from '@/assets/logo/fastapi-svgrepo-com.svg';
-import agnoLogo from '@/assets/logo/agno.png';
+import langchain from '@/assets/logo/langchain.png';
 import dockerLogo from '@/assets/logo/docker-svgrepo-com.svg';
 
 const skills = [
   { icon: Brain, label: 'PyTorch', color: '#EE4C2C' },
   { icon: Code2, label: 'FastAPI', color: '#009688' },
-  { icon: Database, label: 'Agno', color: '#7C3AED' },
+  { icon: Database, label: 'LangChain', color: '#7C3AED' },
   { icon: Boxes, label: 'Docker', color: '#2496ED' },
 ];
 
@@ -113,8 +113,8 @@ export default function AboutSection() {
                   {skill.label === 'FastAPI' && (
                     <img src={fastapiLogo} alt="FastAPI" className="w-10 h-10 object-contain" />
                   )}
-                  {skill.label === 'Agno' && (
-                    <img src={agnoLogo} alt="Agno" className="w-10 h-10 object-contain" />
+                  {skill.label === 'LangChain' && (
+                    <img src={langchain} alt="LangChain" className="w-10 h-10 object-contain" />
                   )}
                   {skill.label === 'Docker' && (
                     <img src={dockerLogo} alt="Docker" className="w-10 h-10 object-contain" />
