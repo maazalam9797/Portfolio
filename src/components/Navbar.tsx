@@ -11,7 +11,7 @@ export default function Navbar() {
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'research', label: 'Research' },
-    { id: 'resume', label: 'Download-CV' },
+    { id: 'resume', label: 'Get CV' },
     // { id: 'mindrix', label: 'Mindrix' },
   ];
 
