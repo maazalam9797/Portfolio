@@ -35,7 +35,7 @@ export default function ResearchSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 glow-text">Research & Papers</h2>
+          <h2 className="text-5xl font-bold mb-4 glow-text">Published Research Papers</h2>
           <p className="text-xl text-muted-foreground">
             Exploring the frontiers of Machine Learning and Artificial Intelligence
           </p>
