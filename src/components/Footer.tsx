@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Left: Name and tagline */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-2 glow-text">Maaz Alam</h3>
-            <p className="text-muted-foreground">Building the future of AI, one model at a time</p>
+            <p className="text-muted-foreground">Engineering Intelligent Systems that Shape Tomorrow</p>
           </div>
 
           {/* Center: Social links */}
