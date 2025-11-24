@@ -37,9 +37,9 @@ export default function AboutSection() {
               <p>
                 I'm a Machine Learning Engineer with{' '}
                 <span className="text-primary font-semibold">Five Years of Experience</span>, specializing in{' '}
-                <span className="text-secondary font-semibold">Traditional Machine Learning</span>,{' '}
-                <span className="text-secondary font-semibold">Deep Learning</span>,{' '}
-                <span className="text-secondary font-semibold">Generative AI</span> and {' '}
+                <span className="text-accent font-semibold">Traditional Machine Learning</span>,{' '}
+                <span className="text-accent font-semibold">Deep Learning</span>,{' '}
+                <span className="text-accent font-semibold">Generative AI</span> and {' '}
                 <span className="text-accent font-semibold">Agentic AI systems</span>.
               </p>
               <p>
