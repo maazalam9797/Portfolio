@@ -7,7 +7,7 @@ const experiences = [
   {
     role: 'Lead Data Scientist',
     company: 'Horizon Tech Services',
-    location: 'Islamabad Pakistan',
+    location: 'Islamabad, Pakistan',
     period: 'Oct 2023 – Present',
     achievements: [
       'Leading a Generative AI project implementing Stable Diffusion models for text-to-image generation, enhancing the fidelity and creativity of visual outputs based on textual prompts.',
@@ -20,7 +20,7 @@ const experiences = [
   {
     role: 'Machine Learning Engineer',
     company: 'PinVan Technologies',
-    location: 'Peshawar Pakistan',
+    location: 'Hybrid, Pakistan',
     period: 'Sep 2021 – Sep 2023',
     achievements: [
       'Lead a high-impact project for one of Pakistan largest corporations, leveraging advanced Natural Language Processing (NLP) techniques to extract actionable business insights from complex real-world data. Led supervised fine-tuning of the state-of-the-art Open AI’s whisper model, enhancing its applicability to intricate audio recordings.',

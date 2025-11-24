@@ -69,7 +69,7 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="absolute w-56 h-56 rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl z-10"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5" />
               <img
                 src={profileImage}
                 alt="Kartikeya Trivedi"

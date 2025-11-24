@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Text-to-Image',
     category: 'GenAI',
-    description: 'Implementing Stable Diffusion models for text-to-image generation, enhancing the fidelity and creativity of visual outputs based on textual prompts.',
+    description: 'Implementing Stable Diffusion models to generate real images, enhancing the fidelity and creativity of visual outputs based on textual prompts.',
     tags: ['FastAPI', 'Stable Diffusion', 'LORA', 'VS Code'],
     gradient: 'from-primary to-secondary',
     // github: 'https://www.codeshift-ai.tech/',
@@ -18,8 +18,8 @@ const projects = [
     id: 2,
     title: 'AI Response',
     category: 'GenAI',
-    description: 'Fine-tuned LLMs with domain-specific knowledge, to align responses with client-specific areas of interest, leveraging advanced Generative AI techniques, including RAG and CAG.',
-    tags: ['LAMA', 'Elasticsearch', 'RAG', 'Docling'],
+    description: 'Fine-tuned LLMs with domain-specific knowledge, to align responses with client specific areas of interest, leveraging GenAI, RAG and CAG.',
+    tags: ['LAMA', 'Elasticsearch', 'RAG', 'Context'],
     gradient: 'from-secondary to-accent',
     // github: 'https://github.com/MLSAKIIT/ForgeTube',
     // demo: 'https://www.youtube.com/@ForgeTubeMLSAKIIT',
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: 'Chat-Bot',
     category: 'GenAI',
-    description: 'Advanced WhatsApp chatbot leveraging GPT-4 and generative Al, designed to act as a friendly companion. Firebase for managing chat history.',
+    description: 'Built a conversational WhatsApp companion powered by GPT-4 and generative AI, with real-time context and persistent chat history.',
     tags: ['FastAPI', 'Firebase', 'Webhooks', 'Whatsapp API'],
     gradient: 'from-accent to-primary',
     // github: 'https://github.com/MLSAKIIT/professorpeter',
@@ -38,8 +38,8 @@ const projects = [
     id: 4,
     title: 'Businesss Insights',
     category: 'NLP',
-    description: 'Lead a high-impact project for one of Pakistan largest corporations. Fine-tuning state-of-the-art Open AI’s whisper model, extract actionable business insights from complex data and enhancing applicability to intricate audio recordings.',
-    tags: ['NLP', 'Whisper', 'NER', 'Drive'],
+    description: 'Fine-tuned Whisper for a major Pakistani corporation, improving transcription accuracy and generating insights from complex and noisy audio data.',
+    tags: ['NLP', 'Whisper', 'NER', 'OpenAI'],
     gradient: 'from-primary to-accent',
     // github: 'https://github.com/Kartikeya-trivedi/Kolamvision',
     // demo: 'https://kolamvision.vercel.app/',
@@ -47,8 +47,8 @@ const projects = [
   {
     id: 5,
     title: 'Crops Classification',
-    category: 'ML',
-    description: 'Project funded by Pakistan Tobacco board to analyze and estimate the production of tobacco growth in Pakistan using Satellite imagery. LSTM-based approach for fusing PlanetScope and Sentinel-2 satellite imagery.',
+    category: 'CV',
+    description: 'LSTM-based satellite fusion system (PlanetScope + Sentinel-2) for nationwide tobacco production forecasting, funded by Pakistan Tobacco Board.',
     tags: ['Computer Vision', 'Remote Sensing', 'CSV', 'LSTM'],
     gradient: 'from-secondary to-accent',
     github: '#',
@@ -57,8 +57,8 @@ const projects = [
   {
     id: 6,
     title: 'Brain Biometric',
-    category: 'DL',
-    description: 'Deep Siamese Convolutional Networks to create a robust biometric authentication framework, exploring signal preprocessing, feature engineering, and model architecture design tailored to neurophysiological data.',
+    category: 'ML/DL',
+    description: 'Implemented Deep Siamese CNNs with tailored preprocessing and feature engineering for neurophysiological biometric authentication.',
     tags: ['Siamese Arch', 'Biometric', 'Signals', 'Engineering'],
     gradient: 'from-secondary to-accent',
     github: '#',
@@ -66,7 +66,7 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'ML', 'GenAI', 'NLP', 'DL'];
+const categories = ['All', 'CV', 'NLP', 'GenAI'];
 
 export default function ProjectsSection() {
   const ref = useRef(null);
