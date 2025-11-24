@@ -22,7 +22,7 @@ export default function HeroSection() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Maaz Alam
+            Maaz Alam Chanhge
           </motion.h1>
 
           {/* Subtitle */}
